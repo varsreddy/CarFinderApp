@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Theme Colors and Fonts */
+:root {
+  --color-primary: #FF4D30;
+  --color-secondary: #1A1A1A;
+  --color-accent: #F6F6F6;
+  --color-light: #F9FBFD;
+  --color-dark: #1E1E1E;
+
+  --font-main: 'Urbanist', sans-serif;
+}
+
+/* Dark Theme Overrides */
+.dark {
+  --color-accent: #1A1A1A;
+  --color-light: #1E1E1E;
+  --color-dark: #F6F6F6;
+  --color-secondary: #FFFFFF;
+  /* Primary color remains the same */
+}
+
+/* Base Styling */
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
